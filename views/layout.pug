@@ -1,7 +1,8 @@
 doctype html
 mixin item(title, url)
   li
-    a(href=url class=`item ${path == url ? 'active': '' }`)=title //dodaje klasę, do wybranego elemntu i wstawia treść url oraz title => poniżej renderujemy z tego mixina
+    a(href=url class=`item ${path == url ? 'active': '' }`)=title 
+    
 
 
 html
@@ -11,8 +12,8 @@ html
   body
     nav
       ul 
-        +item('Strona główna', '/') ; 
-        +item('Aktualności', '/news');
-        +item('Quiz', '/quiz');
-        +item('Admin', '/admin');
+        +item('Strona główna', '/')  
+        +item('Aktualności', '/news')
+        +item('Quiz', '/quiz')
+        +item('Admin', '/admin')
     block content
