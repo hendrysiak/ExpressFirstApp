@@ -1,15 +1,15 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var newsSchema = new Schema({
+const newsSchema = new Schema({
     title: {
         type: String,
-        required: true
+        required: [true, 'Pole tytuł jest wymagane']
     },
 
     description: {
         type: String,
-        required: true
+        required: [true, 'Pole opis jest wymagane']
     },
 
     created: {
