@@ -17,4 +17,4 @@ const quizSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('Quiz', newsSchema)
+module.exports = mongoose.model('Quiz', quizSchema)
